@@ -26,7 +26,7 @@ void robotPrintMessage(void)
 
 /**
  * robotPrintAscii
- *
+ *ignore
  */
 void robotPrintAscii(void)
 {
