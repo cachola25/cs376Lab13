@@ -33,7 +33,8 @@ void robotPrintAscii(void)
   printf("\n\n");
   printf("UWR: Unidentified Wheeled Robot\n");
   int round = 0;
-  for(int i = 0; i < 3; i++) {
+  for(int i = 0; i < 6; i++) {
+	if(i % 2 == 0){
 	printBlanks(10, round);
   	printf("     0_0    \n");
 	printBlanks(10, round);
@@ -42,7 +43,20 @@ void robotPrintAscii(void)
 	printf("   /|___|\\ \n");
 	printBlanks(10, round);
 	printf("   _|   |_   \n");
-
+	} else {
+        printBlanks(10, round);
+  	printf("     0_0    \n");
+	printBlanks(10, round);
+	printf("    [x_x]   \n");
+	printBlanks(10, round);
+	printf("   \\|___|/ \n");
+	printBlanks(10, round);
+	printf("   _|   |_   \n");
+	
+	
+	
+	
+	}
 	round++;
   }
 }
